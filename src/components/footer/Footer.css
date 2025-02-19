@@ -1,0 +1,14 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:50px;
+    width: 100%;background-color: silver;
+    text-align: center;display: flex;align-items: center;
+    word-spacing: 2px;justify-content: center;
+    z-index: 600;
+}
+#heart{
+    color: rgb(255, 0, 0);
+}
