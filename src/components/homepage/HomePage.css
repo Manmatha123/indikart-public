@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    background: #000;
+    color: #fff;
+  }
+  /* .box{
+    height: 200px;
+    width: 200px;
+    background: crimson;
+    border: 2px solid green;
+    border-radius: 10px;
+  }
+  img{
+    height: 350px;
+    width: 350px;
+    
+  } */
+   .main{
+    height: 100vh;
+    width: 100%;
+    background: #FFFFFF;
+    color: #000;
+   }
+   .navpage{
+    height: 10vh;
+    width: 100%;
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: space-between;
+   }
+   .logo{
+    height: 100%;
+    flex-basis: 13%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 2;
+    
+   }
+   .logotxt{
+    font-size: 23px;
+    font-family: aquarium;
+  }
+   .navlist-icon{
+    height: 100%;
+    flex-basis: 53%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+   }
+   .navlist{
+    height: 100%;
+    flex-basis: 60%;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+   }
+   .navlist ul{
+    /* text-decoration: none; */
+    /* list-style: none; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    
+   }
+   .navlist ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: 0 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: Bolded;
+    /* line-height: 20px; */
+    /* word-spacing: 20px; */
+    letter-spacing: 2px;
+    
+    
+   }
+   /* .navlist ul li:hover{
+    color: #ba943f;
+   } */
+   .navicon{
+    height: 100%;
+    flex-basis: 35%;
+    /* border: 2px solid blue; */
+    margin-right: 20px;
+   }
+  
+   .swiper {
+    width: 100%;
+    height: 80vh;
+    margin-top: 15px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #111;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .movingtxt{
+    position: absolute;
+    /* border: 2px solid red; */
+    height: 30vh;
+    width: 35vw;
+    left: 10%;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 10px;
+    font-family: rubik;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+  /* .movingimg img{
+    height: 200px;
+    width: 200px;
+  } */
+  
+  .movingbtn{
+    height: 40px;
+    width: 150px;
+    margin: 30px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-family: rubik;
+    font-size: 16px;
+  
+  }
+  .movingbtn:hover{
+    background: #ba943f;
+    cursor: pointer;
+    scale: 1.05;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .navicon{
+    font-size: 22px;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    
+  }
+  .icon{
+    margin: 0 30px;
+  }
+  .icon:hover{
+    color: #ba943f;
+    scale: 1.1;
+    transition: ease-in-out;
+  }
+  .navicon ul{
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+    margin-left: -23px;
+  }
+  .navicon ul li{
+    font-size: 15px;
+    margin: 0 2px;
+    padding: 0 2px;
+    font-family: aquarium;
+  
+  }
+  .navicon ul li:hover{
+    color: #ba943f;
+    scale: 1.1;
+    cursor: pointer;
+  }
+  
+  @font-face {
+    font-family: aquarium ;
+    src: url(./Fonts/aquarium.otf);
+  }
+  
+  @font-face {
+    font-family: Bolded ;
+    src: url(./Fonts/Bolded-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: rubik;
+    src: url(./Fonts/Rubik-Regular.ttf);
+  }
+  
+  /* =======================> Second Page <================= */
+  
+  
