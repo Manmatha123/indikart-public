@@ -44,7 +44,7 @@
 
 .product-card img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .price {
@@ -108,4 +108,7 @@
 .sort{
   color:black;
   font-weight: bold;
+}
+.imgdetails{
+  padding:15px;
 }

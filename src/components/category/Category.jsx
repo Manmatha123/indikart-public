@@ -134,7 +134,7 @@ const Category = () => {
         <div className="product-list">
           {products.map((product) => (
             <div key={product.id} className="product-card">
-              <img src={product.image} alt={product.name} />
+              <img src={product.image} alt={product.name}  className="imgdetails"/>
               <h3 className="product-title">{product.name}</h3>
               <p className="rating">
                 <div className="ratingdiv">
