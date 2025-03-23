@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./User.css"
+import Navbar from "../homepage/Navbar";
 
 
 export default function User() {
@@ -7,6 +8,8 @@ export default function User() {
   const [mobile, setMobile] = useState("+1234567890");
 
   return (
+    <div className="user-main-div">
+       <Navbar/>
     <div className="profile-container">
       {/* Sidebar */}
       <aside className="sidebar">
@@ -49,7 +52,7 @@ export default function User() {
           <input type="text" className="input-field" value={mobile} readOnly />
         </div>
 
-        <div className="faq-section">
+        {/* <div className="faq-section">
           <h2 className="faq-title">FAQs</h2>
           <p className="faq-text"><strong>What happens when I update my email address (or mobile number)?</strong></p>
           <p className="faq-text">Your login email ID (or mobile number) changes, likewise...</p>
@@ -57,8 +60,10 @@ export default function User() {
           <p className="faq-text">It happens as soon as you confirm the verification...</p>
           <p className="faq-text"><strong>What happens to my existing Flipkart account?</strong></p>
           <p className="faq-text">Updating email or mobile doesn’t invalidate your account...</p>
-        </div>
+        </div> */}
       </main>
+    </div>
+
     </div>
   );
 }

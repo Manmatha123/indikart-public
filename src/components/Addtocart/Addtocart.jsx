@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Addtocart.css";
+import Navbar from "../homepage/Navbar";
 
 const AddToCart = () => {
   const [cartItems, setCartItems] = useState([
@@ -52,6 +53,8 @@ const AddToCart = () => {
   const totalAmount = totalMRP - totalDiscount + deliveryCharge;
 
   return (
+    <div className="cart-central-container">
+      <Navbar/>
     <div className="cart-container">
       {/* Left: Cart Items */}
       <div className="cart-items">
@@ -125,6 +128,7 @@ const AddToCart = () => {
       <div className="order-section">
         <button className="order-btn">Place Order</button>
       </div>
+    </div>
     </div>
   );
 };

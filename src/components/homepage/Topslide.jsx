@@ -14,8 +14,12 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { useNavigate, useNavigation } from 'react-router-dom';
 
 export default function Sliders() {
+
+const navigate=useNavigate();
+
   return (
     <>
       <Swiper
@@ -62,7 +66,7 @@ export default function Sliders() {
               Everyone’s Talking About		
               </motion.h2>
               <motion.h2 initial={{opacity:0}} animate={{x:20, opacity:1}} transition={{delay:8.9,duration:0.9}}>Sweeper and funnel.</motion.h2>
-              <motion.button initial={{y:40,opacity:0}} animate={{y:-20,opacity:1}} transition={{delay:9,duration:1.1}}  whileTap={{scale:0.7}} className="movingbtn">Get Start</motion.button>
+              <motion.button initial={{y:40,opacity:0}} animate={{y:-20,opacity:1}} transition={{delay:9,duration:1.1}}   className="movingbtn" onClick={()=>navigate("/category")}>Get Start</motion.button>
             </div>
             <img src="https://cdn.shopify.com/s/files/1/0489/1171/2423/files/vt_interior_elements_home1_slide_2.jpg?v=1726387721" />
         </SwiperSlide>

@@ -4,6 +4,8 @@ import Footer from '../footer/Footer'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Navbar from '../homepage/Navbar';
+import { useNavigate } from 'react-router-dom';
 const products = [
   {
     id: 1,
@@ -100,11 +102,13 @@ const settings = {
   prevArrow: <CustomPrevArrow />,
 };
 
-
+const navigate=useNavigate();
   return (
     <>
    <div className="view-container">
-<div className="view-navbar"></div>
+<div className="view-navbar">
+  <Navbar/>
+</div>
 <div className="view-container-body">
 
 <div className="view-galery">
@@ -114,7 +118,7 @@ const settings = {
     </div>
     <div className="purchase-options">
       <button className="purchase-button"><i className="fa-solid fa-bolt-lightning"></i> Buy Now</button>
-      <button className="add-to-cart"><i className="fa-solid fa-cart-shopping"></i> Add to cart</button>
+      <button className="add-to-cart" onClick={()=>navigate("/cart")}><i className="fa-solid fa-cart-shopping"></i> Add to cart</button>
     </div>
   </div>
 

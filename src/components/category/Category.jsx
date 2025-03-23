@@ -1,5 +1,7 @@
 import React from "react";
 import "./category.css";
+import Navbar from "../homepage/Navbar";
+import { useNavigate } from "react-router-dom";
 
 const Category = () => {
   const products = [
@@ -56,8 +58,10 @@ const Category = () => {
       dprice: 300,
     },
   ];
-
+const navigate=useNavigate();
   return (
+    <div className="category-central-div">
+       <Navbar/>
     <div className="category-container">
       <div className="filters">
         <h3>Filters</h3>
@@ -133,7 +137,7 @@ const Category = () => {
 
         <div className="product-list">
           {products.map((product) => (
-            <div key={product.id} className="product-card">
+            <div key={product.id} className="product-card" onClick={()=>navigate("/view")}>
               <img src={product.image} alt={product.name}  className="imgdetails"/>
               <h3 className="product-title">{product.name}</h3>
               <p className="rating">
@@ -157,6 +161,8 @@ const Category = () => {
           ))}
         </div>
       </div>
+    </div>
+
     </div>
   );
 };
